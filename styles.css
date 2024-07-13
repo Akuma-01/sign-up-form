@@ -1,0 +1,171 @@
+@font-face {
+    font-family: customFont;
+    src: url(Norse-Bold.otf)
+}
+
+* {
+    font-family:'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 10vw;
+    font-size: calc(12px + 1vh);
+    background-color: rgb(46, 42, 42);
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+}
+
+.side-image {
+    background-image: url("img/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.logo {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 123, 4, 0.2);
+
+}
+
+.odin {
+    font-family: customFont;
+    font-size: clamp(10vh, 15vh, 15vh);
+    align-self: center;
+}
+
+.logo img {
+   height: clamp(10vh, 15vh, 15vh);
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(255, 228, 228);
+    font-size: calc(7px + 1vh);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4vh;
+}
+
+.footer a{
+    color: rgb(125, 125, 255);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 65%;
+}
+
+.text {
+    display: flex;
+    align-items: end;
+
+    font-weight: 500;
+    background-color: rgb(225, 225, 225);
+    height: 30%;
+    padding: 45px 8%;  
+    font-size: calc(12px + 1vh);
+    color: #F2613F;
+    text-shadow: 1px 1px 1px rgb(255, 198, 42) ;
+}
+
+em {
+    color: #F2613F;
+    text-shadow: 1px 1px 1px rgb(255, 198, 42) ;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 10px 10px rgb(200, 200, 200);
+    position: relative;
+    height: 45%;
+    padding: 5vh 8%;        
+}
+
+.clicks {
+    background-color: rgb(225, 225, 225);
+    height: 25%;
+    padding: 45px 8%;
+    color:black;
+    text-shadow: 1px 1px 1px rgb(255, 198, 42);
+}
+
+.form-row {
+    display: flex;
+    gap:calc(45px + 8%);
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 100;
+    font-size:calc(7px + 1vh);
+    letter-spacing: 0.7px;
+    color: black;
+}
+
+input {
+    appearance: none;
+    padding: 3px;
+    border: solid rgb(163, 163, 252) 1px;
+    border-radius: 3px;
+    width: 17vw;
+    height: clamp(28px, calc(2.1vw), 33px);
+    color:black;
+    font-size:calc(10px + 1vh);
+    
+}
+
+.line {
+    font-weight: 500;
+    font-size: calc(12px + 1vh);
+    color:black;
+    text-shadow: 1px 1px 1px rgb(255, 198, 42);
+    margin-bottom: calc(30px + 1vh);  
+}
+
+input:invalid {
+    border: none;
+    outline: solid red 1.5px;
+}
+
+button {
+    background-color: #F2613F;
+    color: white;
+    padding: 8px 40px;
+    border: #ff2600 solid 2px;
+    border-radius: 5px;
+    font-size: calc(9px + 1vh);
+    margin: 1vh 0 3vh 0;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    color: blue;
+    text-shadow: none;
+}
+
+
